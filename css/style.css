@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: N;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Noto Serif JP', serif;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.page-header {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 284px;
+}
+
+.name {
+    background-color: #fff;
+    justify-content: center;
+    margin: 40 auto 0 auto;
+    font-size: 40px;
+}
+.Sub{
+    font-size: 24px;
+    margin: 16 auto 0 auto;
+}
+
+.gnavi__wrap {
+    position: fixed;
+    margin: 0 auto 0 auto;
+    top: 8;
+    right: 32;
+}
+
+.gnavi__lists {
+    display: flex;
+}
+
+.gnavi__list {
+    transition: all .3s;
+}
+.gnavi__lists img{
+    width: 80%;
+}
+
+.gnavi__list:hover {
+    background-color: #b3b3b3;
+}
+
+.gnavi__list:not(:first-child)::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.gnavi__list:hover::before {
+    background-color: #fff;
+}
+
+.gnavi__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #1b4059;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+.gnavi__list:hover a {
+    color: #fff;
+}
+
+.dropdown__lists {
+    display: none;
+    width: 100px;
+    position: absolute;
+    top: 45px;
+    left: 8px;
+}
+
+.gnavi__list:hover .dropdown__lists {
+    display: block;
+}
+
+.dropdown__list {
+    background-color: #5a5a5a;
+    height: 50px;
+    transition: all .3s;
+    position: relative;
+}
+
+.dropdown__list:not(:first-child)::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dropdown__list:hover {
+    background-color: #003558;
+}
+
+.dropdown__list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.dropdown__list a::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(135deg);
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 5px);
+}
+
+.Tasks{
+    background-color: #5a5a5a;
+    font-size: 40px;
+    color: #FFF;
+}
+.out{
+    background-color: #5a5a5a;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.SubTitle_L{
+    font-size: 32px;
+    margin: 80 auto 0 260;
+    text-align: left;
+}
+.Text_L{
+    max-width: 600px;
+    font-size: 24px;
+    margin: 102 auto 0 260;
+    text-align: left;
+}
+.color_Gazou{
+    margin: 80 200 0 auto;
+}
+
+.out2{
+    background-color: #5a5a5a;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.SubTitle_R{
+    max-width: 600px;
+    font-size: 32px;
+    margin: 80 60 0 0;
+    text-align: left;
+}
+.Text_R{
+    max-width: 600px;
+    font-size: 24px;
+    margin: 102 60 0 0;
+    text-align: left;
+}
+.Meishi_Gazou{
+    order: -1;
+    margin: 80 auto 0 260;
+}
+.Profile{
+    background-color: #5a5a5a;
+}
+.Ramen{
+    width: 200;
+    margin: 0 auto 0 auto;
+    display: flex;
+}
+.Profile_cont{
+    font-size: 24px;
+    color: #FFF;
+    margin: 64 auto 0 auto;
+}
+.Sound{
+    display: flex;
+}
